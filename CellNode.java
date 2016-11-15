@@ -1,9 +1,4 @@
 /**
- * CellNode.java
- * Created for CSC115 Assignment #4.
- */
-
-/**
  * CellNode is a protected class to be used by a Reference-Based
  * Deque.
  */
