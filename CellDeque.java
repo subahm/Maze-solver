@@ -9,16 +9,18 @@ public class CellDeque{
 		tail = null;
 		count = 0;
 	}
-		
+	
+	// First cell
 	public Cell first(){														
 		return head.item;
 	}
 	
-	
+	// Last cell
 	public Cell last(){                                                  	
 		return tail.item; 
 	}
 	
+	// Insert a new cell at the beginig of the queue
 	public void insertFirst(Cell p){		
 		
 		CellNode temp = new CellNode(p);
@@ -34,6 +36,7 @@ public class CellDeque{
 		count++;
 	}
 	
+	// Insert a new cell at the end of the queue
 	public void insertLast(Cell p){		
 	
 		CellNode temp = new CellNode(p);
@@ -56,11 +59,13 @@ public class CellDeque{
 		return false;
 	}
 	
+	// Making the queue empty
 	public void makeEmpty(){												
 		head = null;
 		tail = null;
 	}
 	
+	// Removing the first cell in the queue
 	public Cell removeFirst() throws NullPointerException {
 		if(!isEmpty()){
 		Cell temp = head.item;
@@ -72,6 +77,7 @@ public class CellDeque{
 		return null;
 	}
 	
+	// Removing the last cell in the queue
 	public Cell removeLast(){
 	if(!isEmpty()){
 		Cell temp = tail.item;
@@ -83,6 +89,7 @@ public class CellDeque{
 		return null;
 	}
 	
+	// Printing the queue
 	public String toString(){
 		String details = "";
 		
@@ -96,8 +103,9 @@ public class CellDeque{
 		return details;
 		
 	}
-
-	public static void   	main(java.lang.String[] args){	                   
+	
+	// Main for internal testing 
+	public static void main(java.lang.String[] args){	                   
 		Cell a = new Cell(17,2);
 		Cell b = new Cell(9,5);
 		Cell c = new Cell(2,4);
